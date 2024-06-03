@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tourly - Travel agancy</title>
+
+<!-- 
+- favicon
+-->
+<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+<!-- 
+- custom css link
+-->
+<link rel="stylesheet" href="./assets/css/style.css" />
+
+<!-- 
+  - google font link
+-->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+<link
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+rel="stylesheet"
+/>
+</head>
+
+<body>
+<section id="home">
+<header class="head-content flex">
+  <div class="phone flex">
+    <a href="#"> <i class="fa-solid fa-phone"></a></i>
+    <div class="phone-info f-colum">
+
+      <p id="phone-para">For Future inquries:</p>
+      <p id="phone-number">+0334775234</p>
+    </div>
+  </div>
+
+  <div class="head-logo">
+    <img src="./assets/images/logo.svg" alt="" />
+  </div>
+  <div class="head-search">
+    <i class="fa-regular fa-sun fa" id="sun"></i>
+<i class="fa-regular fa-moon fa" id="moon" style="display: none;"></i>
+<!-- the bat for sidebar -->
+</div>
+</header>
+
+
+<!-- our main nvabr will comw here -->
+<nav id="navbar" class="navbar-link">
+  <div class="media-icons">
+    <!-- fackbook linkedin logo will come here -->
+    
+    
+    <i class="fa-brands fa-facebook m-icon"></i>
+    <i class="fa-brands fa-twitter m-icon"></i>
+    <i class="fa-brands fa-youtube m-icon"></i>
+  </div>
+  <div class="nav-links">
+    <ul id="nav-List">
+      <h1 id="close">X</h1>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#destination">DESTINATION</a></li>
+      <li><a href="#pakages">PAKAGES</a></li>
+      <li><a href="#gallary">GALLARY</a></li>
+      <li><a href="#contact">CONTACT US</a></li>
+    </ul>
+  </div>
+  
+  <!-- book now btn will come here -->
+  <div class="nav-btn flex">
+    <button>BOOK NOW</button>
+    <div id="bar" class="none-bar">=</div>
+  </div>
+</nav>
+
+<!-- =================================================== home section ====================================== -->
+<div class="home-content all-flex f-colum ">
+  <!-- the huge text -->
+  
+<div class="home-text">
+  JOURNEY TO EXPLORE WORLD
+</div>
+<div class="home-para">
+  <p>Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos voluptatibus habitant? Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.</p>
+</div>
+
+<div class="home-btns">
+<button class="active">LEARN MORE</button>
+<button class="disable">BOOK NOW</button>
+</div>
+
+</div>
+</section>
+
+<div class="selection flex all-flex ">
+<div class="input-box">
+
+  <label for="Des">Destination*</label>
+  <input type="text" id="Des"  required placeholder="Enter Destination">
+</div>
+<div class="input-box">
+
+<label for="Number">Pax Number*</label>
+<input type="Number" id="Number"  required placeholder="No of people">
+</div>
+<div class="input-box">
+<label for="Checkinn">Checkin Date**</label>
+<input type="date" id=Checkinn"  required>
+</div>
+
+<div class="input-box">
+<label for="Checkout">Checkout Date*</label>
+<input type="date" id="Checkout"  required placeholder="5/27/2024">
+</div>
+<button type="submit"  class="form-btn">Inqurie Now</button>
+</div>
+
+
+<!-- ===================================== DESTINATION SECTION ====================================== -->
+<section id="destination">
+
+  <div class="destination-content">
+<div class="destination-text">
+
+  <h4>UNCOVER PLACE</h4>
+
+  <h1 class="modecolor">POPULAR DESTINATION</h1>
+  <p>Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+</div>
+
+<div class="destination-img-container flex">
+
+<div class="des-img">
+<div class="des-img-box">
+  <img src="./assets/images/popular-1.jpg" alt="Burj khalifa, dubai" loading="lazy">
+  
+  <div class="des-text">
+
+    <div class="des-small">ITALY</div>
+    <div class="des-big">Sam Gui</div>
+    <div class="des-para">Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</div>
+    
+    <div class="des-star">
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+  </div>
+</div>
+</div>
+<div class="des-img">
+<div class="des-img-box">
+  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
+  
+  <div class="des-text">
+   
+  
+    <div class="des-small"> DUBAI</div>
+    <div class="des-big">  BURJ KHALIFA</div>
+    <div class="des-para">Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</div>
+    
+    <div class="des-star">
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- the box -->
+<div class="des-img-box">
+  <img src="./assets/images/popular-3.jpg" alt="Burj khalifa, dubai" loading="lazy">
+  
+  <div class="des-text">
+
+    <div class="des-small">JAPAN</div>
+    <div class="des-big">Kyoto temple</div>
+    <div class="des-para">Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</div>
+    
+    <div class="des-star">
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- the box end -->
+
+<div class="des-btn">
+  <button>MORE DESTINATION</button>
+</div>
+  </div>
+</section>
+
+
+<!-- ============================================= now PAKAGES SECTION ======================================= -->
+<section id="pakages">
+
+  <div class="pakages-content">
+    <div class="pakages-text">
+      <h4>POPULAR PACKEGES</h4>
+      
+
+  <h1 class="modecolor"> CHECKOUT OUR PACKEGES</h1>
+  <p>Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+</div>
+    </div>
+
+<!-- images sectoin in pakages  -->
+<div class="pakages-box">
+  <div class="pak-img">
+    <img src="./assets/images/packege-1.jpg" alt="">
+  </div>
+  <!-- the pakagse text  content -->
+  <div class="pak-text">
+<h2>EXPERIENCE THE GREAT HOLIDAY ON BEACH</h2>
+<p>Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque, cras, aspernatur.</p>
+<!-- icons -->
+<div class="pak-icons flex ">
+  <i class="fa-solid fa-clock pak-main-icon"></i>
+  <h5>&nbsp;  7D/6N &nbsp; |</h5>
+  <i class="fa-solid fa-user pak-main-icon"></i>
+  <h5 >&nbsp; pax: 10 &nbsp; |</h5>
+  <i class="fa-solid fa-location-dot pak-main-icon"></i>
+  <h5>Malaysia</h5>
+<!-- icon end -->
+</div>
+</div>
+<!-- the pricing section -->
+
+<div class="pak-price">
+<!-- revies and price -->
+<div class="pak-stars flex">
+
+  <h4>(25 reviwes)</h4>
+  <div class="pak-star">
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+</div>
+</div>
+<h1>$750</h1>
+<p>  / per person</p>
+
+<button class="pak-btn">BUY NOW</button>
+
+</div>
+</div>
+<!-- ================================================== -->
+
+<!-- images sectoin in pakages  -->
+<div class="pakages-box">
+  <div class="pak-img">
+    <img src="./assets/images/packege-2.jpg" alt="">
+  </div>
+  <!-- the pakagse text  content -->
+  <div class="pak-text">
+<h2>SUMMER HOLIDAY TO THE OXOLOTAN RIVER</h2>
+<p>Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque, cras, aspernatur.</p>
+<!-- icons -->
+<div class="pak-icons flex ">
+  <i class="fa-solid fa-clock pak-main-icon"></i>
+  <h5>&nbsp;  7D/6N &nbsp; |</h5>
+  <i class="fa-solid fa-user pak-main-icon"></i>
+  <h5 >&nbsp; pax: 10 &nbsp; |</h5>
+  <i class="fa-solid fa-location-dot pak-main-icon"></i>
+  <h5>Malaysia</h5>
+<!-- icon end -->
+</div>
+</div>
+<!-- the pricing section -->
+
+<div class="pak-price">
+<!-- revies and price -->
+<div class="pak-stars flex">
+
+  <h4>(25 reviwes)</h4>
+  <div class="pak-star">
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+</div>
+</div>
+<h1>$520</h1>
+<p>  / per person</p>
+
+<button class="pak-btn">BUY NOW</button>
+
+</div>
+</div>
+<!-- ========================================================== -->
+
+
+
+<!-- images sectoin in pakages  -->
+<div class="pakages-box">
+  <div class="pak-img">
+    <img src="./assets/images/packege-3.jpg" alt="">
+  </div>
+  <!-- the pakagse text  content -->
+  <div class="pak-text">
+<h2>SANTORINI ISLAND'S WEEKEND VACATION</h2>
+<p>Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque, cras, aspernatur.</p>
+<!-- icons -->
+<div class="pak-icons flex ">
+  <i class="fa-solid fa-clock pak-main-icon"></i>
+  <h5>&nbsp;  7D/6N &nbsp; |</h5>
+  <i class="fa-solid fa-user pak-main-icon"></i>
+  <h5 >&nbsp; pax: 10 &nbsp; |</h5>
+  <i class="fa-solid fa-location-dot pak-main-icon"></i>
+  <h5>Malaysia</h5>
+  <!-- icon end -->
+</div>
+</div>
+<!-- the pricing section -->
+
+<div class="pak-price">
+  <!-- revies and price -->
+  <div class="pak-stars flex">
+    
+    <h4>(25 reviwes)</h4>
+  <div class="pak-star">
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+  </div>
+</div>
+<h1>$660</h1>
+<p>  / per person</p>
+
+<button class="pak-btn">BUY NOW</button>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="pakages-end-btn">
+  <button>MORE pakages</button>
+</div>
+</section>
+
+
+<!-- ==================================================== GALLARY SECTIOM ==================================== -->
+<section id="gallary">
+  
+  <div class="gallary-content">
+    <div class="gallary-text">
+      <h4>PHOTO GALLERY</h4>
+      
+      
+      
+      <h1 class="modecolor"> PHOTO'S FROM TRAVELLERS</h1>
+      <p>Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>
+    </div>
+  </div>
+  
+  <div class="gallary-img-container">
+    
+    <div class="gallary-box">
+      <div class="img">
+        
+        <img src="./assets/images/gallery-1.jpg" alt="">
+      </div>
+        <div class="img">
+          <img src="./assets/images/gallery-2.jpg" alt="">
+        </div>
+      </div>
+      
+      <div class="gallary-huge-box">
+        <img src="./assets/images/gallery-3.jpg" alt="">
+      </div>
+
+      <div class="gallary-box">
+        <div class="img">
+          
+          <img src="./assets/images/gallery-4.jpg" alt="">
+        </div>
+        <div class="img">
+          
+          <img src="./assets/images/gallery-5.jpg" alt="">
+        </div>
+
+      </div>
+      
+      
+      
+      
+    </div>
+    
+  </section>
+  
+  <!-- ============================================================== CONTACT SECTION ==================================  -->
+  
+  
+  <section id="contact">
+
+    <div class="contact-content">
+      <!-- the about contact sectin  -->
+      <div class="about-contact">
+
+  <div class="about-contact-text">
+    <h4>CALL TO ACTION</h4>
+    <h1>  READY FOR UNFORGATABLE TRAVEL. REMEMBER US!</h1>
+    <p>Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent.</p>  
+  </div>
+  <div class="about-contact-btn">
+    <button><a href="#">Contact Us!</a></button>
+  </div>
+</div>
+<!-- the about contact sectin end -->
+
+<!-- the main contact page start form here -->
+<div class="main-contact">
+  
+  <!-- main boxes -->
+  <div class="main-boxes-container">
+
+    <div class="main-box">
+      <img src="./assets/images/logo.svg" alt="">
+      <p>Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia at perferendis, pretium, aenean aut ultrices.</p>
+    </div>
+    
+    <div class="main-box main-icon-gap">
+      <div class="contact-us-heading">Contact Us</div>
+      <hr>
+      <p>Feel free to contact and reach us !!</p>
+
+      <div class="contact-icon">
+
+        <div class="c-icon-box">
+          <i class="fa-solid fa-clock pak-main-icon"></i>
+          <a href="">+01 (123) 4567 90</a> 
+        </div>
+
+        <div class="c-icon-box">
+          <i class="fa-solid fa-clock pak-main-icon"></i>
+          <a href=""> info.tourly.com</a> 
+        </div>
+
+        <div class="c-icon-box">
+          <i class="fa-solid fa-clock pak-main-icon"></i>
+          <a href="">3146 Koontz, California</a> 
+        </div>
+
+      </div>
+    </div>
+    <!-- the email adress -->
+  
+    <div class="form-submit-box">
+  <p>Subscribe our newsletter for more update & news !!</p>
+  <div class="contact-btns">
+
+    <input type="email" required placeholder="Enter Your Email">
+    <input type="submit" value="Subscribe" class="Subscribe">
+  </div>
+    </div>
+  
+
+</div>
+</div>
+
+
+</div>
+<!-- the footer comes herer -->
+<footer>
+
+  <div class="foot-cotent">
+<div class="foot-1">© 2024 SAIMRAZA. All rights reserved</div>
+<div class="foot2">
+
+ <a href="#"> Privacy Policy</a> <span>
+  |
+ </span>
+ <a href="#">  Term & Condition</a> <span>
+  |
+ </span>
+ <a href="#">  FAQ</a> 
+</div>
+  </div>
+</footer>
+</section>
+
+
+
+
+
+<!-- js liked file -->
+<!-- main js fuke link -->
+<script src="assets/js/script.js"></script>
+
+<!-- main js fuke link end -->
+
+
+<script src="./assets/js/script.js"></script>
+
+<!-- 
+- ionicon link
+-->
+<script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<script
+  src="https://kit.fontawesome.com/62e0bff752.js"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>
