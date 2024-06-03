@@ -4,6 +4,7 @@ let navList = document.querySelector("#nav-List");
 let moon = document.querySelector("#moon");
 let sun = document.querySelector("#sun");
 let bar = document.querySelector("#bar");
+let close = document.querySelector("#close");
 
 // all the classis are been searched here
 let navLinks = document.querySelector(".nav-links");
@@ -59,5 +60,8 @@ moon.onclick = () => {
 };
 
 bar.onclick = () => {
-  navLinks.classList.toggle("sider-bar");
+  navLinks.classList.add("sider-bar");
+};
+close.onclick = () => {
+  navLinks.classList.remove("sider-bar");
 };
