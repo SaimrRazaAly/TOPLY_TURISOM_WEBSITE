@@ -126,6 +126,7 @@ hr {
   cursor: pointer;
   font-size: var(--fs-3);
 }
+
 /*-----------------------------------*\
  * #REUSED STYLE
 \*-----------------------------------*/
@@ -769,6 +770,7 @@ input {
   background: var(--gunmetal);
   color: var(--gainsboro);
   width: 100%;
+
   padding: 120px var(--section-padding);
   display: flex;
   gap: 25px;
@@ -802,6 +804,13 @@ input {
   font-size: var(--fs-3);
   font-weight: 800;
   margin: 10px 0;
+}
+
+.box-1-2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-list {
@@ -971,7 +980,8 @@ input {
     position: fixed;
     top: 0;
     right: 0;
-    height: 110vh;
+    /* height: 110vh; */
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -989,7 +999,7 @@ input {
     flex-direction: column;
     right: 0px;
     width: 30%;
-    height: 110vh;
+    height: 100%;
     background: var(--white);
     padding: 50px 12px;
     /* padding: 100px; */
@@ -1044,6 +1054,13 @@ input {
   .home-content {
     padding: 10px 90px;
   }
+
+  .box-1-2 {
+    justify-content: space-around;
+  }
+  .main-boxes-container {
+    flex-direction: column;
+  }
 }
 @media (max-width: 1021px) {
   .pakages-box {
@@ -1087,6 +1104,13 @@ input {
   }
   .head-content {
     padding: 15px 20px;
+  }
+
+  .box-1-2 {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
   }
 }
 @media (max-width: 597px) {
@@ -1257,11 +1281,6 @@ input {
   .gallary-img-container {
     padding: 10px 20px;
   }
-
-  .main-boxes-container {
-    height: 150vh;
-    padding: 10px;
-  }
 }
 @media (max-width: 355px) {
   .des-img-box {
@@ -1381,9 +1400,6 @@ input {
   .des-btn button {
     padding: 15mpx 25px;
   }
-  .main-boxes-container {
-    height: 100vh;
-  }
 
   .pak-icons {
     font-size: var(--fs-8);
@@ -1445,12 +1461,7 @@ input {
     text-align: none;
   }
 }
-@media (max-width: 323px) {
-  .main-boxes-container {
-    height: 100vh;
-    padding: 20px;
-  }
-}
+
 @media (max-width: 310px) {
   .about-contact-text p {
     font-size: 10px;
