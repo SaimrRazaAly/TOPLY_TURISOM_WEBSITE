@@ -7,8 +7,11 @@
  */
 
 /*-----------------------------------*\
- * #CUSTOM PROPERTY
-\*-----------------------------------*/
+ * /* #CUSTOM PROPERTY */
+
+body {
+  overflow-x: scroll;
+}
 
 :root {
   /**
@@ -116,7 +119,7 @@ html {
 body {
   background: var(--white);
   overflow-x: hidden;
-  /* width: 100%; */
+  width: 100%;
 }
 
 hr {
@@ -212,6 +215,7 @@ nav#navbar {
 .nav-links {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 nav#navbar ul {
@@ -346,6 +350,7 @@ input {
   color: var(--black);
   border: none;
   outline: 0;
+  margin-bottom: 10px;
 }
 
 .input-box {
@@ -501,8 +506,7 @@ input {
   right: 20px;
 }
 
-.des-btn button,
-.pakages-end-btn button {
+.section-end-cta-btn button {
   font-size: var(--fs-5);
   border-radius: 100px;
   padding: var(--padding, 18px 18px);
@@ -512,9 +516,11 @@ input {
   transition: var(--transition);
   cursor: pointer;
   font-weight: 700;
+  margin-top: 20px;
+  width: 200px;
   text-transform: uppercase;
 }
-.des-btn button:is(:hover, :focus) {
+.section-end-cta-btn button:is(:hover, :focus) {
   background: var(--yale-blue);
 }
 
@@ -537,7 +543,6 @@ input {
 .pakages-box {
   display: flex;
   transform: translateY(20px);
-  max-width: 1200px;
   width: auto;
   padding: 40px;
   scale: 1.07;
@@ -810,7 +815,7 @@ input {
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .main-list {
@@ -971,18 +976,13 @@ input {
 }
 @media (max-width: 1075px) {
   .nav-links {
-    display: none;
-  }
-
-  /* cheaking for tthe sidebar */
-
-  .sider-bar {
     position: fixed;
     top: 0;
     right: 0;
     /* height: 110vh; */
     height: 100%;
     width: 100%;
+    left: -130vw;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -992,19 +992,36 @@ input {
     transition: var(--transition);
     z-index: 100;
     /* z-index: 1000; */
+    transition: 1s;
   }
-  .sider-bar ul {
+
+  .nav-links ul {
     position: fixed;
     top: 0;
     flex-direction: column;
-    right: 0px;
+    left: 0;
+    right: 0;
     width: 30%;
     height: 100%;
     background: var(--white);
     padding: 50px 12px;
     /* padding: 100px; */
     gap: 10px;
+    transition: 1.2s ease-out;
   }
+  .sider-bar ul {
+    left: 0;
+  }
+  .sider-bar {
+    left: 0;
+  }
+
+  .media-icons {
+    display: none;
+  }
+
+  /* cheaking for tthe sidebar */
+
   .sider-bar ul #close {
     scale: 1;
   }
@@ -1026,7 +1043,7 @@ input {
   /* cheaking for tthe sidebar end */
 
   .none-bar {
-    scale: 1;
+    scale: 2;
   }
   nav#navbar {
     padding: 20px 39px;
@@ -1048,9 +1065,7 @@ input {
   .home-content {
     padding: 0 5px;
   }
-  .home-content p {
-    font-size: 12px;
-  }
+
   .home-content {
     padding: 10px 90px;
   }
@@ -1082,7 +1097,7 @@ input {
   }
 
   .pak-img {
-    width: 80%;
+    width: 50%;
     object-fit: cover;
     object-position: top;
     height: 70vh;
@@ -1157,6 +1172,11 @@ input {
     font-size: 13px;
     text-align: start;
   }
+  nav#navbar {
+    padding: 20px 45px;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 @media (max-width: 995px) {
   .pakages-end-btn button,
@@ -1169,10 +1189,6 @@ input {
   }
 }
 @media (max-width: 795px) {
-  .foot2 a,
-  .foot-1 {
-    font-size: 12px;
-  }
   .sider-bar ul {
     width: 60%;
   }
@@ -1204,7 +1220,7 @@ input {
   .gallary-text h1,
   .about-contact-text h1 {
     text-align: center;
-    font-size: var(--fs-3);
+    font-size: 30px;
   }
 
   .destination-text h4,
@@ -1228,9 +1244,6 @@ input {
 }
 
 @media (max-width: 429px) {
-  .home-text {
-    font-size: 28px;
-  }
   .home-btns button {
     padding: 10px 25px;
     font-size: var(--fs-6);
@@ -1323,10 +1336,13 @@ input {
     justify-content: center;
     align-items: center;
   }
+  .foot-1 {
+    margin-bottom: 10px;
+  }
 
   input,
   .Subscribe {
-    padding: 8px 19px;
+    padding: 12px 19px;
   }
   .main-boxes-container img {
     width: 70%;
@@ -1341,12 +1357,12 @@ input {
 }
 @media (max-width: 391px) {
   .home-content p {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .home-btns button,
   .nav-btn button {
-    padding: 8px 13px;
+    padding: 8px 21px;
     font-size: var(--fs-8);
   }
   .m-icon {
@@ -1356,24 +1372,15 @@ input {
     padding: 20px 15px;
   }
   .home-text {
-    font-size: 18px;
+    font-size: 32px;
   }
-  .home-content p {
-    font-size: 11px;
-  }
+
   input::placeholder {
     font-size: var(--fs-8);
   }
   .about-contact-text h4 {
-    font-size: 10px;
+    font-size: 14px;
   }
-  .destination-text h1,
-  .pakages-text h1,
-  .gallary-text h1,
-  .about-contact-text h1 {
-    font-size: var(--fs-5);
-  }
-
   .about-contact {
     padding: 50px 28px;
   }
@@ -1473,6 +1480,37 @@ input {
 
   .foot2 a,
   .foot-1 {
-    font-size: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Preloader styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #121212; /* Background color for the preloader */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it stays above all other content */
+}
+
+/* Spinner animation */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #ffffff; /* Change the color here */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
