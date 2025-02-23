@@ -1007,7 +1007,7 @@ input {
     padding: 50px 12px;
     /* padding: 100px; */
     gap: 10px;
-    transition: 1.2s ease-out;
+    transition: 0.7s ease-out;
   }
   .sider-bar ul {
     left: 0;
@@ -1118,7 +1118,16 @@ input {
     font-size: 12px;
   }
   .head-content {
-    padding: 15px 20px;
+    padding: 15px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .head-logo {
+    margin-left: 0;
+  }
+  .phone {
+    display: none;
   }
 
   .box-1-2 {
@@ -1156,11 +1165,11 @@ input {
 
 @media (max-width: 910px) {
   .about-contact-text h1 {
-    font-size: var(--fs-3);
+    /* font-size: var(--fs-3); */
+    font-size: 25px;
   }
   .about-contact-text p {
-    font-size: 12px;
-    text-align: center;
+    font-size: 14px;
   }
 }
 @media (max-width: 1075px) {
@@ -1201,6 +1210,9 @@ input {
 }
 
 @media (max-width: 669px) {
+  .about-contact-text p {
+    text-align: center;
+  }
   .about-contact {
     flex-direction: column;
     align-items: center;
@@ -1276,10 +1288,6 @@ input {
     text-align: center;
     justify-content: center;
     align-items: center;
-  }
-
-  .head-logo {
-    margin-left: -62px;
   }
 }
 
@@ -1369,7 +1377,7 @@ input {
     font-size: 10px;
   }
   nav#navbar {
-    padding: 20px 15px;
+    padding: 20px px;
   }
   .home-text {
     font-size: 32px;
@@ -1432,7 +1440,7 @@ input {
     max-width: 280px;
   }
   .head-content {
-    padding: 10px 5px;
+    padding: 10px 45px;
   }
 }
 /* @media (max-width: 3490px) { */
@@ -1457,9 +1465,6 @@ input {
   }
 }
 @media (max-width: 317px) {
-  .head-logo {
-    margin: 0 3px;
-  }
   #phone-para,
   #phone-number {
     font-size: 9px;
